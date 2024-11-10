@@ -1,0 +1,253 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0d1b2a; /* Dark background */
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styling */
+.navbar-dark {
+    background-color: #001f3f;
+}
+
+.navbar-brand span {
+    color: #00d9ff;
+}
+
+.navbar-dark .nav-link {
+    color: #00bfff !important;
+    transition: color 0.3s ease;
+}
+
+.navbar-dark .nav-link:hover {
+    color: #00d9ff !important;
+}
+
+/* Hero Section */
+.hero {
+    background: url('devops.avif') no-repeat center center/cover;
+    color: #e0f7fa;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #e0f7fa;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    color: #b0e0e6;
+}
+
+.hero .btn-lg {
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border-radius: 50px;
+    background-color: #001f3f;
+    color: #00d9ff;
+    border: 2px solid #00bfff;
+    transition: background-color 0.3s ease, transform 0.3s ease, border 0.3s ease;
+}
+
+.hero .btn-lg:hover {
+    background-color: #00bfff;
+    transform: translateY(-5px);
+    border: 2px solid #00d9ff;
+}
+
+/* Courses Section */
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: #1f2f44; /* Lighter blue shade for the card */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #00d9ff;
+    margin-bottom: 10px;
+}
+
+.card-price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #00bfff;
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 250px;
+}
+
+.card-body {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-body .card-text {
+    font-size: 1rem;
+    color: #b0e0e6;
+}
+
+/* Button Styling */
+.btn-outline-primary {
+    border: 2px solid #00d9ff;
+    color: #00d9ff;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: #00d9ff;
+    color: #ffffff;
+    border-color: #00bfff;
+}
+
+/* Testimonials Section */
+.testimonial-card {
+    background-color: #001f3f;
+    border-radius: 10px;
+    color: #e0f7fa;
+    transition: box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    box-shadow: 0 4px 20px rgba(0, 215, 255, 0.3);
+}
+
+.testimonials p {
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+/* Contact Section */
+.contact p {
+    font-size: 1.2rem;
+    color: #b0e0e6;
+}
+
+.contact a {
+    background-color: #00d9ff;
+    color: #ffffff;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    border: 2px solid #00bfff;
+}
+
+.contact a:hover {
+    background-color: #00bfff;
+    border-color: #00d9ff;
+}
+
+/* Footer */
+.footer {
+    background-color: #001f3f;
+    padding: 20px 0;
+    border-top: 2px solid #00bfff;
+}
+
+.footer .social-icons .icon {
+    margin: 0 10px;
+    width: 35px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.footer .social-icons .icon:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+/* Darken DevOps and Python sections */
+.section#devops, .section#python {
+    background-color: #001f3f;
+    color: #ffffff;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.7);
+    border: 2px solid #00bfff;
+}
+
+.section#devops .content, .section#python .content {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 40px 30px;
+    border-radius: 10px;
+    border: 2px solid #00bfff;
+}
+
+/* Scroll to Top Button */
+.scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #00bfff;
+    color: #ffffff;
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 2px solid #00d9ff;
+}
+
+.scroll-top:hover {
+    background-color: #00d9ff;
+    border: 2px solid #00bfff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .contact p {
+        font-size: 1rem;
+    }
+
+    .contact a {
+        font-size: 1rem;
+        padding: 10px 25px;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .footer .social-icons .icon {
+        width: 30px;
+    }
+}
